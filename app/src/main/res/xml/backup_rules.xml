@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Credentials are AES-GCM encrypted with an AndroidKeyStore key that never leaves this
+  device — restored ciphertexts would be undecryptable, so the auth store is excluded.
+  Snapshots are re-fetchable cache. (Decrypt failures also degrade to sign-in-again,
+  see plainAuth(), but excluding the data is the first line of defense.)
+  This file applies below API 31; data_extraction_rules.xml covers 31+.
+-->
+<full-backup-content>
+    <exclude domain="file" path="datastore/app-data.json" />
+    <exclude domain="file" path="snapshots" />
+</full-backup-content>

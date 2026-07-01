@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "803462786585",
+    "project_id": "shopware-shop-manager",
+    "storage_bucket": "shopware-shop-manager.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:803462786585:android:5a762b4c5fad555dc58488",
+        "android_client_info": {
+          "package_name": "de.shyim.shopware"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCta6rG2wIWjpzOQgAK3P0OMmb-Kl2-hMY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

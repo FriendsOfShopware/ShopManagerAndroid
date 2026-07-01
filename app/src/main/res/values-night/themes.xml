@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  Dark parent so the pre-Compose window frame and status-bar icon contrast follow the
+  system theme (the light parent forced a white startup frame in dark mode).
+-->
+<resources>
+
+    <style name="Theme.Shopware" parent="android:Theme.Material.NoActionBar" />
+</resources>

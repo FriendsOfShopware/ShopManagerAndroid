@@ -1,0 +1,495 @@
+<resources>
+    <string name="app_name">Shopware Shop Manager</string>
+
+    <!-- Common -->
+    <string name="common_back">Zurück</string>
+    <string name="common_save">Speichern</string>
+    <string name="common_cancel">Abbrechen</string>
+    <string name="common_close">Schließen</string>
+    <string name="common_apply">Anwenden</string>
+    <string name="common_add">Hinzufügen</string>
+    <string name="common_edit">Bearbeiten</string>
+    <string name="common_continue">Weiter</string>
+    <string name="common_retry">Erneut versuchen</string>
+    <string name="common_remove">Entfernen</string>
+    <string name="common_clear">Leeren</string>
+    <string name="common_change">Ändern</string>
+    <string name="common_loading">Wird geladen…</string>
+    <string name="common_active">Aktiv</string>
+    <string name="common_inactive">Inaktiv</string>
+    <string name="common_documents">Dokumente</string>
+    <string name="common_no_shops">Keine Shops verbunden</string>
+
+    <!-- In-app updates -->
+    <string name="update_downloaded">Ein Update wurde heruntergeladen.</string>
+    <string name="update_restart">Neu starten</string>
+
+    <!-- Push -->
+    <string name="push_new_order_title">Neue Bestellung</string>
+    <string name="push_app_missing_title">Push-App nicht installiert</string>
+    <string name="push_app_missing_text">Ihr Shop wurde verbunden, aber für Push-Benachrichtigungen zu Bestellungen muss die App „Frosh Mobile Push“ im Shop installiert sein. Installieren Sie sie aus dem Shopware Store (oder über Ihre App-Verwaltung), um auf diesem Gerät über neue Bestellungen informiert zu werden.</string>
+    <string name="common_shop_not_found">Shop nicht gefunden</string>
+    <string name="common_update_failed">Aktualisierung fehlgeschlagen</string>
+
+    <!-- Navigation tabs -->
+    <string name="nav_home">Start</string>
+    <string name="nav_orders">Bestellungen</string>
+    <string name="nav_customers">Kunden</string>
+    <string name="nav_promos">Aktionen</string>
+    <string name="nav_reports">Berichte</string>
+
+    <!-- Home / dashboard -->
+    <string name="home_connect_shop">Shop verbinden</string>
+    <string name="home_switch_shop">Shop wechseln</string>
+    <string name="home_selected">Ausgewählt</string>
+    <string name="home_add_shop">Shop hinzufügen</string>
+    <string name="home_manage_shops">Shops verwalten</string>
+    <string name="home_syncing">Synchronisiert</string>
+    <string name="home_retry_sync">Sync wiederholen</string>
+    <string name="home_refresh">Aktualisieren</string>
+    <string name="home_synced_ago">Synchronisiert %1$s</string>
+    <string name="home_sync">Sync</string>
+    <string name="home_first_sync">Erste Synchronisation mit %1$s…</string>
+    <string name="home_sales_today">Umsatz heute</string>
+    <string name="home_target_progress">%1$d%% von %2$s Tagesziel</string>
+    <string name="home_orders_today">Bestellungen heute</string>
+    <string name="home_open_orders">Offene Bestellungen</string>
+    <string name="home_low_stock">Niedriger Bestand</string>
+    <string name="home_needs_attention">Benötigt Aufmerksamkeit</string>
+    <plurals name="home_pending_reviews">
+        <item quantity="one">1 Bewertung wartet auf Freigabe</item>
+        <item quantity="other">%1$d Bewertungen warten auf Freigabe</item>
+    </plurals>
+    <string name="home_tap_to_moderate">Zum Moderieren tippen</string>
+    <plurals name="home_unpaid_orders">
+        <item quantity="one">%1$d unbezahlte Bestellung</item>
+        <item quantity="other">%1$d unbezahlte Bestellungen</item>
+    </plurals>
+    <string name="home_payment_open_3_days">Zahlung seit mehr als 3 Tagen offen</string>
+    <string name="home_tap_to_restock">Zum Auffüllen oder Bearbeiten tippen</string>
+    <string name="home_stock_running_low">Bestand wird knapp</string>
+    <string name="home_stock_left">Noch %1$d</string>
+    <string name="home_recent_orders">Letzte Bestellungen</string>
+    <string name="home_no_orders_yet">Noch keine Bestellungen — sie erscheinen hier nach dem nächsten Verkauf.</string>
+
+    <!-- Sync -->
+    <string name="sync_failed">Synchronisation fehlgeschlagen</string>
+    <string name="sync_failed_showing_last">Synchronisation fehlgeschlagen — letzte Daten werden angezeigt</string>
+    <string name="sync_couldnt_sync">Dieser Shop konnte nicht synchronisiert werden</string>
+
+    <!-- Generic error mapping (Throwable.userMessage) -->
+    <string name="error_network">Keine Verbindung. Prüfen Sie Ihr Netzwerk und versuchen Sie es erneut.</string>
+    <string name="error_access_denied">Ihnen fehlt die Berechtigung dafür im Shop.</string>
+    <string name="error_not_found">Nicht gefunden.</string>
+    <string name="error_generic">Etwas ist schiefgelaufen. Bitte erneut versuchen.</string>
+
+    <!-- Orders listing -->
+    <string name="orders_filter_order_status">Bestellstatus</string>
+    <string name="orders_filter_payment_status">Zahlungsstatus</string>
+    <string name="orders_filter_delivery_status">Lieferstatus</string>
+    <string name="orders_filter_order_date">Bestelldatum</string>
+    <string name="orders_filter_order_value">Bestellwert</string>
+    <string name="orders_filter_payment_method">Zahlungsart</string>
+    <string name="common_sales_channel">Verkaufskanal</string>
+    <string name="orders_filter_has_documents">Mit Dokumenten</string>
+    <string name="orders_filter_no_documents">Ohne Dokumente</string>
+    <string name="orders_quick_open">Offen</string>
+    <string name="orders_quick_in_progress">In Bearbeitung</string>
+    <string name="orders_quick_done">Abgeschlossen</string>
+    <string name="orders_quick_cancelled">Storniert</string>
+    <string name="orders_search_placeholder">Bestellnummer oder Kunde</string>
+    <string name="orders_empty">Keine passenden Bestellungen.</string>
+    <string name="orders_select_order">Bestellung auswählen</string>
+    <string name="customers_select_customer">Kunde auswählen</string>
+
+    <!-- Order detail -->
+    <string name="order_detail_title">Bestellung</string>
+    <string name="order_detail_title_number">Bestellung #%1$s</string>
+    <string name="order_detail_items">Positionen</string>
+    <string name="order_detail_unit_price">à %1$s</string>
+    <string name="order_detail_net">Netto</string>
+    <string name="order_detail_vat">inkl. %1$s%% MwSt.</string>
+    <string name="order_detail_shipping">Versand</string>
+    <string name="order_detail_total">Gesamt</string>
+    <string name="order_detail_open">Öffnen</string>
+    <string name="order_detail_share">Teilen</string>
+    <string name="order_detail_no_documents">Noch keine Dokumente.</string>
+    <string name="order_detail_invoice">Rechnung</string>
+    <string name="order_detail_delivery_note">Lieferschein</string>
+    <string name="order_detail_payment">Zahlung</string>
+    <string name="order_detail_billing_address">Rechnungsadresse</string>
+    <string name="order_detail_shipping_address">Lieferadresse</string>
+    <string name="order_detail_customer_note">Kundenkommentar</string>
+    <string name="order_detail_internal_note">Interne Notiz</string>
+    <string name="order_detail_note_placeholder">Nur für Ihr Team sichtbar</string>
+    <string name="order_detail_no_note">Noch keine Notiz — nur Ihr Team sieht das hier.</string>
+    <string name="order_detail_method">Versandart</string>
+    <string name="order_detail_tracking_codes">Tracking-Codes</string>
+    <string name="order_detail_remove_tracking">Tracking-Code entfernen</string>
+    <string name="order_detail_no_tracking">Noch keine Tracking-Codes.</string>
+    <string name="order_detail_add_tracking">Tracking-Code hinzufügen</string>
+    <string name="order_detail_move_to">Wechseln zu…</string>
+    <string name="order_detail_transition_title">%1$s → %2$s</string>
+    <string name="order_detail_send_email">Bestätigungs-E-Mail senden</string>
+    <string name="order_detail_attach_documents">Dokumente anhängen</string>
+    <string name="order_detail_attach_hint">Ausgewählte Dokumente werden an die E-Mail angehängt.</string>
+    <string name="order_detail_transition_comment">Interner Kommentar (optional)</string>
+    <string name="order_detail_confirm_transition">Bestätigen</string>
+    <string name="order_detail_generate_confirm_title">%1$s erstellen?</string>
+    <string name="order_detail_generate_confirm_text">Das Dokument „%1$s" wird erzeugt und an der Bestellung gespeichert. Das kann in der App nicht rückgängig gemacht werden.</string>
+    <string name="order_detail_generate_confirm">Erstellen</string>
+    <string name="order_detail_load_failed">Bestellung konnte nicht geladen werden</string>
+    <string name="order_detail_transition_failed">Statuswechsel fehlgeschlagen</string>
+    <string name="order_detail_note_save_failed">Notiz konnte nicht gespeichert werden</string>
+    <string name="order_detail_tracking_failed">Tracking-Aktualisierung fehlgeschlagen</string>
+    <string name="order_detail_document_failed">Dokument konnte nicht erstellt werden</string>
+    <string name="order_detail_download_failed">Download fehlgeschlagen</string>
+    <string name="order_detail_no_viewer">Keine App zum Öffnen von PDFs verfügbar</string>
+    <string name="order_detail_timeline">Verlauf</string>
+    <string name="order_detail_timeline_order">Bestellung</string>
+    <string name="order_detail_timeline_payment">Zahlung</string>
+    <string name="order_detail_timeline_delivery">Lieferung</string>
+    <string name="order_detail_timeline_by">von %1$s</string>
+    <string name="order_detail_timeline_system">automatisch</string>
+
+    <!-- Customers listing -->
+    <string name="customers_filter_group">Kundengruppe</string>
+    <string name="customers_filter_account_status">Kontostatus</string>
+    <string name="customers_filter_disabled">Deaktiviert</string>
+    <string name="customers_filter_order_count">Anzahl Bestellungen</string>
+    <string name="customers_search_placeholder">Name oder E-Mail</string>
+    <string name="customers_empty">Keine passenden Kunden.</string>
+    <string name="customers_top_spender">Top-Kunde</string>
+    <string name="customers_repeat_buyers">Wiederkäufer</string>
+    <plurals name="customers_order_count">
+        <item quantity="one">1 Bestellung</item>
+        <item quantity="other">%1$d Bestellungen</item>
+    </plurals>
+    <string name="customers_spent">Umsatz</string>
+
+    <!-- Customer detail -->
+    <string name="customer_detail_title">Kunde</string>
+    <string name="customer_detail_guest">Gast</string>
+    <string name="customer_detail_since">seit %1$s</string>
+    <string name="customer_detail_email_customer">Kunden per E-Mail kontaktieren</string>
+    <string name="customer_detail_call_customer">Kunden anrufen</string>
+    <string name="customer_detail_total_spent">Gesamtumsatz</string>
+    <string name="customer_detail_last_order">Letzte Bestellung</string>
+    <string name="customer_detail_contact">Kontakt</string>
+    <string name="customer_detail_orders_count">Bestellungen · %1$d</string>
+    <string name="customer_detail_no_orders">Noch keine Bestellungen.</string>
+    <plurals name="customer_detail_load_more">
+        <item quantity="one">Mehr laden (noch 1)</item>
+        <item quantity="other">Mehr laden (noch %1$d)</item>
+    </plurals>
+    <string name="customer_detail_not_connected">Shop ist nicht verbunden</string>
+    <string name="customer_detail_not_found">Kunde nicht gefunden</string>
+    <string name="customer_detail_load_failed">Kunde konnte nicht geladen werden</string>
+
+    <!-- Customer edit -->
+    <string name="customer_edit_title">Kunde bearbeiten</string>
+    <string name="customer_edit_salutation">Anrede</string>
+    <string name="customer_edit_first_name">Vorname</string>
+    <string name="customer_edit_last_name">Nachname</string>
+    <string name="customer_edit_email">E-Mail</string>
+    <string name="customer_edit_title_field">Titel</string>
+    <string name="customer_edit_company">Firma</string>
+    <string name="customer_edit_address">Adresse</string>
+    <string name="customer_edit_street">Straße und Hausnummer</string>
+    <string name="customer_edit_additional_line">Adresszusatz</string>
+    <string name="customer_edit_zip">PLZ</string>
+    <string name="customer_edit_city">Stadt</string>
+    <string name="customer_edit_country">Land</string>
+    <string name="customer_edit_phone">Telefon</string>
+    <string name="customer_edit_save_failed">Kunde konnte nicht gespeichert werden</string>
+
+    <!-- Promotions -->
+    <string name="promos_title">Aktionen</string>
+    <string name="promos_search_placeholder">Aktionsname</string>
+    <string name="promos_empty">Keine passenden Aktionen.</string>
+    <plurals name="promos_live_campaigns">
+        <item quantity="one">1 aktive Aktion</item>
+        <item quantity="other">%1$d aktive Aktionen</item>
+    </plurals>
+    <plurals name="promos_redemptions">
+        <item quantity="one">%1$d Einlösung insgesamt</item>
+        <item quantity="other">%1$d Einlösungen insgesamt</item>
+    </plurals>
+    <string name="promos_used">%1$d eingelöst</string>
+    <string name="promos_status_scheduled">Geplant</string>
+    <string name="promos_status_ended">Beendet</string>
+    <string name="promos_generate_codes">Codes generieren</string>
+    <string name="promos_codes_dialog_text">Fügt \"%1$s\" individuelle Codes nach dem konfigurierten Muster hinzu.</string>
+    <string name="promos_amount">Anzahl</string>
+    <plurals name="promos_codes_added">
+        <item quantity="one">%1$d Code hinzugefügt.</item>
+        <item quantity="other">%1$d Codes hinzugefügt.</item>
+    </plurals>
+    <string name="promos_failed">Fehlgeschlagen</string>
+    <string name="promos_generate">Generieren</string>
+
+    <!-- Reviews -->
+    <string name="reviews_title">Bewertungen</string>
+    <string name="reviews_search_placeholder">Titel, Produkt oder Verfasser</string>
+    <string name="reviews_empty_pending">Alles erledigt — keine Bewertungen offen.</string>
+    <string name="reviews_empty">Noch keine Bewertungen vorhanden.</string>
+    <string name="reviews_filter_status">Status</string>
+    <string name="reviews_approved">Freigegeben</string>
+    <string name="reviews_pending">Ausstehend</string>
+    <string name="reviews_reject">Ablehnen</string>
+    <string name="reviews_keep_hidden">Verborgen lassen</string>
+    <string name="reviews_approve">Freigeben</string>
+    <string name="reviews_need_connection">Bewertungen benötigen einen verbundenen Shop</string>
+
+    <!-- Listing scaffold -->
+    <string name="listing_filters">Filter</string>
+    <string name="listing_filters_count">Filter (%1$d)</string>
+    <plurals name="listing_results">
+        <item quantity="one">%1$d Ergebnis</item>
+        <item quantity="other">%1$d Ergebnisse</item>
+    </plurals>
+    <string name="listing_request_failed">Anfrage fehlgeschlagen</string>
+
+    <!-- Filter sheet -->
+    <string name="filter_clear_all">Alle zurücksetzen</string>
+    <string name="filter_min">Min.</string>
+    <string name="filter_max">Max.</string>
+    <string name="filter_today">Heute</string>
+    <string name="filter_last_7_days">Letzte 7 Tage</string>
+    <string name="filter_last_30_days">Letzte 30 Tage</string>
+    <string name="filter_from">Von (JJJJ-MM-TT)</string>
+    <string name="filter_to">Bis (JJJJ-MM-TT)</string>
+    <string name="filter_any">Beliebig</string>
+    <string name="filter_options_load_failed">Optionen konnten nicht geladen werden</string>
+
+    <!-- Reports -->
+    <string name="reports_first_sync_hint">Berichte erscheinen nach der ersten Synchronisation.</string>
+    <string name="reports_revenue_7_days">Umsatz · letzte 7 Tage</string>
+    <string name="reports_compare_shops">Shops vergleichen</string>
+    <string name="reports_top_products">Top-Produkte · letzte 7 Tage</string>
+    <string name="reports_no_product_sales">Keine Produktverkäufe in den letzten 7 Tagen.</string>
+    <string name="reports_sold">%1$d verkauft</string>
+
+    <!-- Analytics (Reports tab) -->
+    <string name="reports_kpi_total_sales">Gesamtumsatz</string>
+    <string name="reports_kpi_order_count">Bestellungen</string>
+    <string name="reports_kpi_avg_order_value">Durchschnittlicher Bestellwert</string>
+    <string name="reports_kpi_new_customers">Neue Kunden</string>
+    <string name="reports_kpi_sales_channel">Verkaufskanal</string>
+    <string name="reports_kpi_payment_method">Zahlungsart</string>
+    <string name="reports_kpi_shipping_method">Versandart</string>
+    <string name="reports_kpi_country">Land</string>
+    <string name="reports_kpi_best_selling">Bestseller</string>
+    <string name="reports_kpi_manufacturer">Nach Hersteller</string>
+    <string name="reports_kpi_promotion_code">Rabattcodes</string>
+    <string name="reports_kpi_customer_count">Kunden gesamt</string>
+    <string name="reports_kpi_empty">Keine Daten für diesen Zeitraum.</string>
+    <string name="reports_sold_qty">%1$s verkauft</string>
+    <string name="reports_orders_n">%1$s Bestellungen</string>
+    <string name="reports_range_today">Heute</string>
+    <string name="reports_range_7">7 Tage</string>
+    <string name="reports_range_30">30 Tage</string>
+    <string name="reports_range_90">90 Tage</string>
+    <string name="reports_filters">Filter</string>
+    <string name="reports_filters_count">Filter · %1$d</string>
+    <string name="reports_filter_sales_channel">Verkaufskanal</string>
+    <string name="reports_filter_order_state">Bestellstatus</string>
+    <string name="reports_filter_payment_state">Zahlungsstatus</string>
+    <string name="reports_filter_delivery_state">Lieferstatus</string>
+    <string name="reports_filter_customer_group">Kundengruppe</string>
+    <string name="reports_filter_country">Land</string>
+    <string name="reports_filters_clear">Alle löschen</string>
+
+    <!-- Connect wizard -->
+    <string name="wizard_title">Shop verbinden</string>
+    <string name="wizard_step_indicator">%1$d/4</string>
+    <string name="wizard_url_title">Wo läuft Ihr Shop?</string>
+    <string name="wizard_url_body">Geben Sie die Adresse Ihrer Shopware-Instanz ein. Die App nutzt deren Admin-API — im Shop wird nichts installiert.</string>
+    <string name="wizard_shop_url">Shop-URL</string>
+    <string name="wizard_url_hint">Lokale Dev-Instanz? http://-Adressen funktionieren auch.</string>
+    <string name="wizard_url_unreachable">%1$s ist nicht erreichbar — prüfen Sie Adresse und Verbindung</string>
+    <string name="wizard_credentials_title">Bei Ihrem Shop anmelden</string>
+    <string name="wizard_credentials_body">Verwenden Sie Ihre Administrations-Anmeldung. Die App speichert ein widerrufbares Sitzungs-Token — niemals Ihr Passwort.</string>
+    <string name="wizard_admin_login">Admin-Anmeldung</string>
+    <string name="wizard_admin_login_subtitle">Ihr Administrations-Benutzername &amp; Passwort</string>
+    <string name="wizard_username">Benutzername</string>
+    <string name="wizard_password">Passwort</string>
+    <string name="wizard_verify_connection">Verbindung prüfen</string>
+    <string name="wizard_login_help">Das Passwort wird nur für die Anmeldung verwendet. Die App speichert ein widerrufbares Sitzungs-Token — niemals Ihr Passwort.</string>
+    <string name="auth_session_expired">Sitzung abgelaufen — bitte in den Shop-Einstellungen erneut anmelden</string>
+    <string name="shop_settings_signin_title">Anmeldung</string>
+    <string name="shop_settings_signin_subtitle">Sitzung mit Ihrer Admin-Anmeldung erneuern.</string>
+    <string name="shop_settings_signin_required">Anmeldung erforderlich — die Sitzung dieses Shops ist nicht mehr gültig.</string>
+    <string name="shop_settings_signin_button">Anmelden</string>
+    <string name="shop_settings_signin_busy">Anmeldung läuft…</string>
+    <string name="shop_settings_signin_success">Angemeldet — Sitzung erneuert.</string>
+    <string name="wizard_connecting">Verbindung zu Ihrem Shop wird hergestellt…</string>
+    <string name="wizard_verify_failed_title">Das hat nicht geklappt</string>
+    <string name="wizard_back_to_credentials">Zurück zu den Zugangsdaten</string>
+    <string name="wizard_check_title">Verbindungscheck</string>
+    <string name="wizard_check_body">Das kann die App mit diesen Zugangsdaten sehen.</string>
+    <string name="wizard_connected_to">Verbunden mit %1$s</string>
+    <string name="wizard_shopware_version">Shopware %1$s</string>
+    <string name="wizard_scope_readable">%1$s lesbar</string>
+    <string name="wizard_scope_not_readable">%1$s nicht lesbar — gewähren Sie der Integrations-Rolle %2$s:read</string>
+    <string name="wizard_continue_partial">Sie können fortfahren — Bereiche ohne Berechtigung bleiben leer, bis der Zugriff gewährt wird.</string>
+    <string name="wizard_personalize_title">Machen Sie ihn zu Ihrem</string>
+    <string name="wizard_personalize_body">Wie soll dieser Shop in der App erscheinen?</string>
+    <string name="wizard_shop_name">Shop-Name</string>
+    <string name="wizard_color_tag">Farbmarkierung</string>
+    <string name="wizard_content_language">Inhaltssprache</string>
+    <string name="wizard_language_hint">Produktnamen, Status und Aktionen werden in dieser Sprache angezeigt.</string>
+    <string name="wizard_currency_detected">Währung %1$s · aus dem Shop ermittelt</string>
+    <string name="wizard_daily_target">Tägliches Umsatzziel (optional)</string>
+    <string name="wizard_open_dashboard">Dashboard öffnen</string>
+    <string name="wizard_probe_products">Produkte</string>
+    <string name="wizard_access_denied">Zugriff verweigert</string>
+    <string name="wizard_could_not_connect">Verbindung nicht möglich</string>
+    <string name="wizard_missing_privileges">(fehlende Berechtigungen: %1$s)</string>
+    <string name="wizard_default_shop_name">Mein Shop</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_page1_title">Ihr Shop,\nin Ihrer Tasche</string>
+    <string name="onboarding_page1_body">Umsatz, Bestellungen und Bestand Ihrer Shopware-Shops — live, wo immer Sie sind.</string>
+    <string name="onboarding_page2_title">Bestellungen, Aktionen\n&amp; Kunden</string>
+    <string name="onboarding_page2_body">Sehen Sie, was sich verkauft, wer kauft und welche Aktionen ziehen — Shop für Shop.</string>
+    <string name="onboarding_page3_title">Offline lesbar,\nsynchron wenn Sie es sind</string>
+    <string name="onboarding_page3_body">Der letzte Stand bleibt ohne Verbindung lesbar — Ihre Zahlen reisen mit.</string>
+    <string name="onboarding_connect_your_shop">Shop verbinden</string>
+
+    <!-- Manage shops -->
+    <string name="manage_title">Shops</string>
+    <string name="manage_shop_settings_cd">Einstellungen für %1$s</string>
+    <string name="shop_settings_title">Shop-Einstellungen</string>
+    <string name="shop_settings_daily_target">Tägliches Umsatzziel</string>
+    <string name="shop_settings_daily_target_hint">Leer lassen für kein Ziel</string>
+    <string name="shop_settings_low_stock">Schwellenwert für niedrigen Bestand</string>
+    <string name="shop_settings_low_stock_hint">Produkte mit höchstens diesem Bestand gelten als niedrig</string>
+    <string name="shop_settings_language_default">Instanz-Standard</string>
+    <string name="shop_settings_change">Ändern</string>
+    <string name="shop_settings_remove">Shop entfernen</string>
+    <!-- Bestell-Push pro Shop (ce_fcn-Registrierung), in den Shop-Einstellungen -->
+    <string name="push_section_title">Bestellbenachrichtigungen</string>
+    <string name="push_section_desc">Erhalten Sie auf diesem Gerät eine Push-Benachrichtigung, wenn in diesem Shop eine neue Bestellung eingeht – über die App „Frosh Mobile Push“. Nach der Registrierung kann es bis zu 5 Minuten dauern, bis Benachrichtigungen eintreffen.</string>
+    <string name="push_status_checking">Wird geprüft…</string>
+    <string name="push_status_registered">Dieses Gerät ist für Bestell-Push registriert.</string>
+    <string name="push_status_registered_named">Registriert als „%1$s“.</string>
+    <string name="push_status_not_registered">Dieses Gerät ist nicht für Bestell-Push registriert.</string>
+    <string name="push_status_app_missing">Die App „Frosh Mobile Push“ ist in diesem Shop nicht installiert. Installieren Sie sie aus dem Shopware Store, um Bestellbenachrichtigungen zu erhalten.</string>
+    <string name="push_status_unavailable">Registrierung konnte nicht geprüft werden – prüfen Sie Verbindung und Berechtigungen.</string>
+    <string name="push_action_register">Dieses Gerät registrieren</string>
+    <string name="push_action_unregister">Abmelden</string>
+    <string name="push_action_retry">Erneut versuchen</string>
+    <string name="push_permission_needed">Erlauben Sie Benachrichtigungen auf diesem Gerät, um Bestell-Push zu erhalten.</string>
+    <string name="push_permission_grant">Benachrichtigungen erlauben</string>
+    <string name="manage_loading_languages">Sprachen werden von %1$s geladen…</string>
+    <string name="manage_languages_failed">Sprachen konnten nicht geladen werden — prüfen Sie Verbindung und Berechtigungen.</string>
+    <string name="manage_remove_shop_title">%1$s entfernen?</string>
+    <string name="manage_remove_shop_text">Entfernt die Verbindung und zwischengespeicherte Daten dieses Shops. Am Shop selbst ändert sich nichts.</string>
+
+    <!-- Notifications -->
+    <string name="notif_channel_orders">Neue Bestellungen</string>
+
+    <!-- Product quick-action sheet -->
+    <string name="product_sheet_not_found">Produkt nicht gefunden</string>
+    <string name="product_sheet_load_failed">Produkt konnte nicht geladen werden</string>
+    <string name="product_sheet_save_failed">Speichern fehlgeschlagen</string>
+    <string name="product_sheet_photo_success">Foto als Produkt-Cover gesetzt.</string>
+    <string name="product_sheet_upload_failed">Upload fehlgeschlagen</string>
+    <string name="product_sheet_active_in_shop">Im Shop aktiv</string>
+    <string name="product_sheet_stock">Bestand</string>
+    <string name="product_sheet_decrease">Verringern</string>
+    <string name="product_sheet_increase">Erhöhen</string>
+    <string name="product_sheet_gross_price">Bruttopreis</string>
+    <string name="product_sheet_price_not_editable">Preis hier nicht änderbar — Varianten- oder regelbasierte Preise. Bitte die Administration nutzen.</string>
+    <string name="product_sheet_uploading">Wird hochgeladen…</string>
+    <string name="product_sheet_new_photo">Neues Produktfoto</string>
+    <!-- Relative timestamps -->
+    <string name="ago_just_now">gerade eben</string>
+    <string name="ago_minutes">vor %1$d Min.</string>
+    <string name="ago_hours">vor %1$d Std.</string>
+    <plurals name="ago_days">
+        <item quantity="one">vor %1$d Tag</item>
+        <item quantity="other">vor %1$d Tagen</item>
+    </plurals>
+    <plurals name="ago_weeks">
+        <item quantity="one">vor %1$d Woche</item>
+        <item quantity="other">vor %1$d Wochen</item>
+    </plurals>
+    <!-- More tab + media manager -->
+    <string name="nav_more">Mehr</string>
+    <string name="more_promos_desc">Kampagnen, Aktivierung und Codes</string>
+    <string name="more_media_desc">Ordner durchsuchen, Bilder hochladen und aufnehmen</string>
+    <string name="more_reviews_desc">Produktbewertungen freigeben oder ablehnen</string>
+    <string name="media_title">Medien</string>
+    <string name="media_search">Dateiname</string>
+    <string name="media_new_folder">Neuer Ordner</string>
+    <string name="media_folder_name">Ordnername</string>
+    <string name="media_upload">Hochladen</string>
+    <string name="media_capture">Kamera</string>
+    <string name="media_empty">In diesem Ordner gibt es noch keine Dateien</string>
+    <string name="media_uploading">Wird hochgeladen…</string>
+    <string name="media_upload_failed">Hochladen fehlgeschlagen</string>
+    <string name="media_folder_create_failed">Ordner konnte nicht erstellt werden</string>
+    <string name="media_delete">Datei löschen</string>
+    <string name="media_delete_failed">Datei konnte nicht gelöscht werden</string>
+    <string name="media_delete_confirm_title">%1$s löschen?</string>
+    <string name="media_delete_confirm_text">Entfernt die Datei aus dem Shop. Seiten oder Produkte, die sie verwenden, verlieren das Bild.</string>
+    <string name="media_file_type">Typ</string>
+    <string name="media_file_size">Größe</string>
+    <string name="media_uploaded_at">Hochgeladen</string>
+    <string name="media_load_failed">Medien konnten nicht geladen werden</string>
+    <string name="wizard_probe_media">Medien</string>
+    <!-- Home-screen-Widget -->
+    <string name="widget_sales_title">Umsatz heute</string>
+    <string name="widget_sales_desc">Heutiger Umsatz Ihres ausgewählten Shops.</string>
+    <string name="widget_week_title">Umsatz diese Woche</string>
+    <string name="widget_week_desc">7-Tage-Umsatzdiagramm Ihres ausgewählten Shops.</string>
+    <string name="widget_sales_week">Umsatz diese Woche</string>
+    <string name="widget_no_shop">App öffnen, um einen Shop zu verbinden.</string>
+    <!-- Produktliste -->
+    <string name="products_title">Produkte</string>
+    <string name="more_products_desc">Katalog, Bestand und Preise durchsuchen</string>
+    <string name="products_search_placeholder">Name oder Produktnummer</string>
+    <string name="products_empty">Keine Produkte entsprechen den Filtern</string>
+    <string name="products_load_failed">Produkte konnten nicht geladen werden</string>
+    <string name="products_filter_stock">Bestand</string>
+    <string name="products_filter_price">Preis</string>
+    <string name="products_filter_manufacturer">Hersteller</string>
+    <string name="products_filter_number">Produktnummer</string>
+    <string name="products_filter_release_date">Veröffentlichungsdatum</string>
+    <string name="products_filter_images">Bilder</string>
+    <string name="products_has_images">Mit Bildern</string>
+    <string name="products_no_images">Ohne Bilder</string>
+    <string name="products_stock_badge">%1$d auf Lager</string>
+
+    <!-- Product detail -->
+    <string name="product_detail_title">Produkt</string>
+    <string name="product_detail_edit">Produkt bearbeiten</string>
+    <string name="product_detail_not_found">Produkt nicht gefunden</string>
+    <string name="product_detail_load_failed">Produkt konnte nicht geladen werden</string>
+    <string name="product_detail_save_failed">Produkt konnte nicht gespeichert werden</string>
+    <string name="product_detail_pricing">Preis</string>
+    <string name="product_detail_net">%1$s netto</string>
+    <string name="product_detail_tax_rate">%1$.0f %% Steuer</string>
+    <string name="product_detail_available">%1$d verfügbar</string>
+    <string name="product_detail_description">Beschreibung</string>
+    <string name="product_detail_identifiers">Kennzeichnungen</string>
+    <string name="product_detail_ean">EAN / GTIN</string>
+    <string name="product_detail_manufacturer_number">Herstellernummer</string>
+    <string name="product_detail_placement">Platzierung</string>
+    <string name="product_detail_categories">Kategorien</string>
+    <string name="product_detail_sales_channels">Verkaufskanäle</string>
+    <string name="product_detail_stock">Bestand</string>
+    <string name="product_detail_variants">Varianten · %1$d</string>
+    <string name="product_manufacturer">Hersteller</string>
+    <string name="product_fields_section_title">Layout der Produktdetails</string>
+    <string name="product_fields_section_desc">Wählen Sie, welche Felder auf der Produktdetailseite erscheinen und welche bearbeitet werden können.</string>
+    <string name="product_fields_show">Anzeigen</string>
+    <string name="product_fields_edit">Bearbeiten</string>
+    <string name="product_edit_name">Name</string>
+    <string name="product_price_net_field">Nettopreis</string>
+    <string name="product_price_link">Brutto und Netto verknüpfen</string>
+    <string name="product_price_unlink">Brutto und Netto trennen</string>
+    <string name="product_price_no_tax">Kein Steuersatz — Brutto und Netto werden unabhängig bearbeitet.</string>
+</resources>
