@@ -176,7 +176,22 @@ class AppRepository(context: Context) {
         val snapshot = liveSource.fetchSnapshot(shop, shop.lowStockThreshold)
         snapshotStore.write(shopId, snapshot)
         snapshots.update { it + (shopId to snapshot) }
+        reconcileCurrency(shop)
         refreshSalesWidgets(appContext) // repaint home-screen widgets from the fresh cache
+    }
+
+    // Dashboard sums are normalized server-side into the system default currency, so the
+    // stored display currency must track it. Shops connected before the default-currency
+    // detection was fixed (issue #2: an arbitrary factor-1.0 currency won) heal here on
+    // their next refresh; also covers the admin changing the system currency later.
+    private suspend fun reconcileCurrency(shop: ConnectedShop) {
+        val iso = apiFor(shop).instance.defaultCurrencyIso() ?: return
+        if (iso == shop.currency) return
+        store.updateData { d ->
+            d.copy(shops = d.shops.map {
+                if (it.id == shop.id) it.copy(currency = iso) else it
+            })
+        }
     }
 
     suspend fun addShop(shop: ConnectedShop) {

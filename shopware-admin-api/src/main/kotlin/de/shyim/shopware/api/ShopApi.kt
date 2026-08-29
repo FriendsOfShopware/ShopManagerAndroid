@@ -202,10 +202,13 @@ class InstanceApi(
     } ?: false
 
     suspend fun defaultCurrencyIso(): String? = swallowing {
+        // The system default currency has the fixed id Defaults::CURRENCY on every
+        // Shopware 6 install. Filtering by factor == 1.0 is NOT reliable: other
+        // currencies may share that factor and the row order is arbitrary.
         repository("currency").search(
             Criteria()
                 .setLimit(1)
-                .addFilter(Criteria.equals("factor", 1.0))
+                .addFilter(Criteria.equals("id", SYSTEM_CURRENCY_ID))
                 .addIncludes("currency", listOf("isoCode"))
         ).data.firstOrNull()?.string("isoCode")
     }
@@ -225,6 +228,11 @@ class InstanceApi(
         throw e
     } catch (_: Exception) {
         null
+    }
+
+    companion object {
+        // Shopware\Core\Defaults::CURRENCY — the undeletable system default currency
+        const val SYSTEM_CURRENCY_ID = "b7d2554b0ce847cd82f3ac9bd1c0dfca"
     }
 
     suspend fun languages(): List<LanguageOption> =

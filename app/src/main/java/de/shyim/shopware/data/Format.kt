@@ -12,11 +12,17 @@ fun currencySymbol(iso: String): String =
 fun fmtMoney(amount: Double, currencyIso: String = "EUR", localeTag: String? = null): String {
     val locale = localeTag?.let { Locale.forLanguageTag(it) } ?: Locale.UK
     return runCatching {
+        val cur = Currency.getInstance(currencyIso)
+        // The currency's own scale (2 for EUR/CHF, 0 for JPY) — setCurrency alone doesn't
+        // update fraction digits, they'd stay at the locale default. Cents matter: most
+        // shop prices end in .99 (issue #2).
+        val digits = cur.defaultFractionDigits.coerceAtLeast(0)
         NumberFormat.getCurrencyInstance(locale).apply {
-            maximumFractionDigits = 0
-            currency = Currency.getInstance(currencyIso)
+            currency = cur
+            minimumFractionDigits = digits
+            maximumFractionDigits = digits
         }.format(amount)
-    }.getOrElse { currencySymbol(currencyIso) + "%,d".format(Locale.UK, amount.roundToLong()) }
+    }.getOrElse { currencySymbol(currencyIso) + "%,.2f".format(Locale.UK, amount) }
 }
 
 fun ConnectedShop.fmt(amount: Double): String = fmtMoney(amount, currency, localeCode)

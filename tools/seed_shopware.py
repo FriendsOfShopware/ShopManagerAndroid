@@ -34,7 +34,9 @@ token = tok["access_token"]
 
 sc = search("sales-channel", {"limit": 5}, token)
 sc = next((s for s in sc if "Storefront" in (s.get("translated", {}).get("name") or s.get("name") or "")), sc[0])
-currency = search("currency", {"limit": 1, "filter": [{"type": "equals", "field": "factor", "value": 1.0}]}, token)[0]
+# Defaults::CURRENCY — the system default; a factor==1.0 filter is ambiguous when
+# other currencies share that factor (the app had the same bug, issue #2)
+currency = search("currency", {"limit": 1, "filter": [{"type": "equals", "field": "id", "value": "b7d2554b0ce847cd82f3ac9bd1c0dfca"}]}, token)[0]
 country = search("country", {"limit": 1, "filter": [{"type": "equals", "field": "active", "value": True}]}, token)[0]
 payment = search("payment-method", {"limit": 1, "filter": [{"type": "equals", "field": "active", "value": True}]}, token)[0]
 salutation = search("salutation", {"limit": 1}, token)[0]
