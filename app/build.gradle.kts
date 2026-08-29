@@ -29,8 +29,8 @@ android {
         applicationId = "de.shyim.shopware"
         minSdk = 29
         targetSdk = 36
-        versionCode = 16
-        versionName = "1.0.4"
+        versionCode = 17
+        versionName = "1.0.5"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
